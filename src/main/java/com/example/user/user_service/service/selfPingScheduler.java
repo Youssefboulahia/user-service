@@ -13,7 +13,7 @@ public class selfPingScheduler {
     private static final Logger logger = LoggerFactory.getLogger(selfPingScheduler.class);
 
     // Runs every 5 minutes (300,000 milliseconds)
-    @Scheduled(fixedRate = 10000)
+    @Scheduled(fixedRate = 300000)
     public void pingSelf() {
         String url = "https://user-service-f8c4.onrender.com/users/bouza";  // or your service URL
 
