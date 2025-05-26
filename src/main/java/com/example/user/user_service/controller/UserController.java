@@ -19,4 +19,9 @@ public class UserController {
     public ResponseEntity<String> getAll() {
         return ResponseEntity.ok("User-service: getAll called");
     }
+
+    @GetMapping("/bouza")
+    public ResponseEntity<String> getBouza() {
+        return ResponseEntity.ok("ena Bouza");
+    }
 }
