@@ -6,7 +6,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.5.0</version>
-		<relativePath/>
+		<relativePath/> <!-- lookup from local repo -->
 	</parent>
 	<groupId>com.example.user</groupId>
 	<artifactId>user-service</artifactId>
