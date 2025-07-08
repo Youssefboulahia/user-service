@@ -16,9 +16,11 @@ public class selfPingScheduler {
     @Scheduled(fixedRate = 300000)
     public void pingSelf() {
         String url = "https://user-service-f8c4.onrender.com/users/bouza";  // or your service URL
+        String url2 ="https://personalchatbot-poxv.onrender.com";
 
         try {
             restTemplate.getForObject(url, String.class);
+            restTemplate.getForObject(url2, String.class);
             System.out.println("Pinged self successfully");
             logger.info("Scheduled pingSelf() is running...");
         } catch (Exception e) {
